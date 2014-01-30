@@ -1,0 +1,12 @@
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\SocialNetworkTesting.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\SocialNetworkTesting.pdb
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\DotNetOpenAuth.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\Google.Apis.Authentication.OAuth2.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\Google.Apis.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\Google.Apis.Plus.v1.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\Newtonsoft.Json.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\ppAPI.Model.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\bin\ppAPI.Model.pdb
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\obj\Release\ResolveAssemblyReference.cache
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\obj\Release\SocialNetworkTesting.dll
+C:\Users\PureProfile\Desktop\Software\Projects\SocialNetworkTesting\SocialNetworkTesting\obj\Release\SocialNetworkTesting.pdb

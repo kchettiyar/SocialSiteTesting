@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SocialModelStoreContainer" CdmEntityContainer="SocialEntities">
+    <EntitySetMapping Name="SocialNetworkConnections">
+      <EntityTypeMapping TypeName="SocialModel.SocialNetworkConnection">
+        <MappingFragment StoreEntitySet="SocialNetworkConnections">
+          <ScalarProperty Name="SocialNetworkConnectionID" ColumnName="SocialNetworkConnectionID" />
+          <ScalarProperty Name="SocialNetworkID" ColumnName="SocialNetworkID" />
+          <ScalarProperty Name="AccountHolderID" ColumnName="AccountHolderID" />
+          <ScalarProperty Name="SocialNetworkUserID" ColumnName="SocialNetworkUserID" />
+          <ScalarProperty Name="APIKey" ColumnName="APIKey" />
+          <ScalarProperty Name="APIKeySecret" ColumnName="APIKeySecret" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="IsOffLineAccess" ColumnName="IsOffLineAccess" />
+          <ScalarProperty Name="TokenExpiryDate" ColumnName="TokenExpiryDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastActionBy" ColumnName="LastActionBy" />
+          <ScalarProperty Name="LastActionDate" ColumnName="LastActionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

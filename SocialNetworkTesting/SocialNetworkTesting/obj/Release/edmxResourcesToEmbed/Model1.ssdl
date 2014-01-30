@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ProjectModelStoreContainer">
+    <EntitySet Name="AddressBook" EntityType="ProjectModel.Store.AddressBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customers" EntityType="ProjectModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="ProjectModel.Store.Products" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="AddressBook">
+    <Key>
+      <PropertyRef Name="AddressBookID" />
+    </Key>
+    <Property Name="AddressBookID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="AddressLine2" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PostCode" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="IsPrimary" Type="bit" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="IsValid" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="PhoneNo" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="EmailAddress" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CellNo" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Valid" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductLongDescription" Type="text" Nullable="false" />
+    <Property Name="ProductImage" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductType" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="AddedDated" Type="datetime" />
+    <Property Name="IsValid" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

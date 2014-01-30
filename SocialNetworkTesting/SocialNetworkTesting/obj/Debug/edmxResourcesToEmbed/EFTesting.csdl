@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SocialModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SocialEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SocialNetworkConnections" EntityType="SocialModel.SocialNetworkConnection" />
+  </EntityContainer>
+  <EntityType Name="SocialNetworkConnection">
+    <Key>
+      <PropertyRef Name="SocialNetworkConnectionID" />
+    </Key>
+    <Property Name="SocialNetworkConnectionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SocialNetworkID" Type="Int32" Nullable="false" />
+    <Property Name="AccountHolderID" Type="Int32" Nullable="false" />
+    <Property Name="SocialNetworkUserID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="APIKey" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="APIKeySecret" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="Source" Type="Int32" />
+    <Property Name="IsOffLineAccess" Type="Boolean" />
+    <Property Name="TokenExpiryDate" Type="Int64" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="LastActionBy" Type="Int32" />
+    <Property Name="LastActionDate" Type="DateTime" />
+  </EntityType>
+</Schema>
